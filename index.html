@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arup Bhowmik Pritom - Full Stack Forge</title>
+    <meta name="description" content="Portfolio of Arup Bhowmik Pritom, a Full Stack Web Developer showcasing expertise in building dynamic and immersive web experiences with an interactive guided tour.">
+
+    <!-- Open Source Libraries & Resources -->
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts (Poppins for body, Merriweather for headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- model-viewer Component (for the 3D model section) -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+    <!-- Combined CSS Styles -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#home" class="logo">
+                Pritom <span class="highlight">Bhowmik</span>
+            </a>
+            <!-- Tour Buttons Integrated -->
+             <div class="tour-controls">
+                <button id="start-tour-btn" class="btn" aria-label="Start Interactive Tour">
+                    <i class="fas fa-film"></i> Start Tour
+                </button>
+                <button id="cancel-tour-btn" class="btn btn-danger" aria-label="Cancel Interactive Tour">
+                    <i class="fas fa-times"></i> Cancel Tour
+                </button>
+
+    </header>
+
+    
+
+    <!-- Wrap main content for potential effects -->
+    <main id="main-content">
+        <!-- 1. Home/Hero Section -->
+        <section id="home" class="hero">
+            <!-- Parallax background is applied via CSS -->
+            <div class="hero-content">
+                 <!-- Add tour-anim-item for sequential reveal during tour -->
+                <h1 class="tour-anim-item">Forging Digital Experiences</h1>
+                <p class="subtitle tour-anim-item">I'm Pritom Bhowmik, a passionate Full Stack Developer crafting dynamic, user-centric web applications from concept to deployment.</p>
+                <a href="#projects" class="cta-button tour-anim-item">View My Work</a>
+            </div>
+
+            <!-- Fire Animation Area - Positioned within Hero, lower -->
+            <div class="fire-display-area">
+                <div class="log-stack"> <div class="log log1"></div> <div class="log log2"></div> </div>
+                <div class="fire-container">
+                    <div class="embers"> <div class="ember e1"></div> <div class="ember e2"></div> <div class="ember e3"></div> <div class="ember e4"></div> </div>
+                    <div class="fire"> <div class="flame f1"></div> <div class="flame f2"></div> <div class="flame f3"></div> <div class="flame f4"></div> <div class="flame f5"></div> </div>
+                    <div class="sparks"> <div class="spark s1"></div> <div class="spark s2"></div> <div class="spark s3"></div> <div class="spark s4"></div> <div class="spark s5"></div> </div>
+                </div>
+            </div>
+            <!-- End Fire Animation Area -->
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                 <!-- Add tour-anim-item to section title -->
+                <h2 class="tour-anim-item">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <!-- Add tour-anim-item to individual paragraphs for sequential reveal -->
+                        <p class="tour-anim-item" data-aos="fade-up" data-aos-delay="100">Hello! I'm <span class="highlight">Pritom Bhowmik</span>, a dedicated Full Stack Web Developer fueled by a passion for building innovative and efficient web solutions. My journey in tech started with a spark of curiosity and has grown into a full-blown fire for creating seamless user experiences and robust backend systems.</p>
+                        <p class="tour-anim-item" data-aos="fade-up" data-aos-delay="200">I thrive in the dynamic world of web development, constantly learning and adapting to new technologies. From designing intuitive front-end interfaces with <span class="highlight">React</span> and <span class="highlight">Vue</span> to architecting scalable backend APIs with <span class="highlight">Node.js</span> and managing databases like <span class="highlight">PostgreSQL</span> and <span class="highlight">MongoDB</span>, I love tackling challenges across the entire stack.</p>
+                         <p class="tour-anim-item">My goal is to not just write code, but to forge digital tools that solve real-world problems and delight users. Let's build something amazing together!</p>
+                    </div>
+                     <!-- Add tour-anim-item to the image container -->
+                    <div class="about-image tour-anim-item">
+                         <!-- Replace with your actual photo -->
+                        <img src="./images/pritom.png" alt="Pritom Bhowmik">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="section-padding">
+            <div class="container">
+                 <!-- Add tour-anim-item to section title -->
+                <h2 class="tour-anim-item">My Tech Stack <span class="highlight">&</span> Tools</h2>
+                <div class="skills-grid">
+                     <!-- Add tour-anim-item to each skill category block -->
+                    <div class="skill-category tour-anim-item">
+                        <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                        <ul class="skills-list">
+                            <!-- Add tour-anim-item to each individual skill list item for sequential reveal within categories -->
+                            <li class="tour-anim-item"><i class="fab fa-html5"></i> HTML5</li>
+                            <li class="tour-anim-item"><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li class="tour-anim-item"><i class="fab fa-js-square"></i> JavaScript</li>
+                            <li class="tour-anim-item"><i class="fab fa-react"></i> React</li>
+                            <li class="tour-anim-item"><i class="fab fa-vuejs"></i> Vue.js</li>
+                            <li class="tour-anim-item"><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                            <li class="tour-anim-item"><i class="fab fa-sass"></i> Sass/SCSS</li>
+                            <li class="tour-anim-item"><i class="fas fa-paint-brush"></i> Tailwind</li>
+                        </ul>
+                    </div>
+                     <div class="skill-category tour-anim-item">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <ul class="skills-list">
+                             <li class="tour-anim-item"><i class="fab fa-node-js"></i> Node.js</li>
+                             <li class="tour-anim-item"><i class="fas fa-feather-alt"></i> Express.js</li>
+                             <!-- Add Python/Django/Flask if applicable -->
+                             <!-- <li class="tour-anim-item"><i class="fab fa-python"></i> Python</li> -->
+                             <!-- <li class="tour-anim-item"><i class="fas fa-flask"></i> Flask</li> -->
+                             <li class="tour-anim-item"><i class="fas fa-project-diagram"></i> REST APIs</li>
+                             <li class="tour-anim-item"><i class="fas fa-plug"></i> GraphQL</li>
+                        </ul>
+                    </div>
+                     <div class="skill-category tour-anim-item">
+                        <h3><i class="fas fa-database"></i> Databases</h3>
+                        <ul class="skills-list">
+                            <li class="tour-anim-item"><i class="fas fa-database"></i> SQL</li>
+                            <li class="tour-anim-item"><i class="fas fa-database"></i> PostgreSQL</li>
+                            <li class="tour-anim-item"><i class="fas fa-leaf"></i> MongoDB</li>
+                            <li class="tour-anim-item"><i class="fas fa-fire"></i> Firebase</li>
+                            <li class="tour-anim-item"><i class="fas fa-cloud"></i> ORMs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category tour-anim-item">
+                        <h3><i class="fas fa-tools"></i> Tools & Concepts</h3>
+                        <ul class="skills-list">
+                             <li class="tour-anim-item"><i class="fab fa-git-alt"></i> Git/GitHub</li>
+                             <li class="tour-anim-item"><i class="fab fa-docker"></i> Docker</li>
+                             <li class="tour-anim-item"><i class="fas fa-terminal"></i> CLI</li>
+                             <li class="tour-anim-item"><i class="fas fa-cloud-upload-alt"></i> Deployment</li>
+                             <li class="tour-anim-item"><i class="fas fa-vial"></i> Testing</li>
+                             <li class="tour-anim-item"><i class="fas fa-users-cog"></i> Agile/Scrum</li>
+                             <li class="tour-anim-item"><i class="fas fa-network-wired"></i> CI/CD</li>
+                             <li class="tour-anim-item"><i class="fas fa-cogs"></i> DevOps Basics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- 4. 3D Model Section (#tech-showcase) -->
+         <section id="tech-showcase" class="section-padding text-center">
+             <div class="container">
+                  <!-- Add tour-anim-item to title, paragraph, and model viewer -->
+                 <h2 class="tour-anim-item">Visualizing Tech</h2>
+                 <p class="tour-anim-item">Bringing ideas to life, layer by layer.</p>
+                <!-- Replace src with a link to your chosen free .glb or .gltf model -->
+                 <model-viewer
+                     src="./models/robot.glb"
+                     alt="A 3D model representing technology or code"
+                     auto-rotate
+                     camera-controls
+                     shadow-intensity="1"
+                     exposure="1"
+                     style="--mv-environment-image: neutral;"
+                     class="tour-anim-item">
+                     <div class="attribution" slot="attribution">
+                        3D model by Google licensed under CC BY 4.0
+                     </div>
+                 </model-viewer>
+                 <!-- If attribution is required and not in the model, you might add a p tag here with tour-anim-item -->
+                 <!-- <p class="attribution tour-anim-item">3D Model "Astronaut" by Google licensed under CC BY 4.0 via <a href="https://modelviewer.dev" target="_blank" rel="noopener noreferrer">modelviewer.dev</a>.</p> -->
+
+             </div>
+         </section>
+
+
+        <!-- 5. Projects Section -->
+        <section id="projects" class="section-padding">
+            <div class="container">
+                 <!-- Add tour-anim-item to section title -->
+                <h2 class="tour-anim-item">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Add tour-anim-item to each project card -->
+                    <article class="project-card tour-anim-item">
+                        <div class="project-card-image">
+                            <img src="./images/project-alpha.jpg" alt="Screenshot of Project Alpha"> <!-- REPLACE WITH YOUR IMAGE PATH -->
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Project Alpha Title</h4>
+                            <p>Brief description of the project, highlighting key features and the problem it solves. Keep it concise and engaging.</p>
+                            <div class="project-tech">
+                                <span>React</span> <span>Node.js</span> <span>MongoDB</span> <span>Express</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://example-alpha-demo.netlify.app" target="_blank" rel="noopener noreferrer" title="Live Demo"><i class="fas fa-external-link-alt"></i></a> <!-- REPLACE LINK -->
+                                <a href="https://github.com/your-github/project-alpha" target="_blank" rel="noopener noreferrer" title="GitHub Repository"><i class="fab fa-github"></i></a> <!-- REPLACE LINK -->
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card tour-anim-item">
+                        <div class="project-card-image">
+                            <img src="./images/project-beta.jpg" alt="Screenshot of Project Beta"> <!-- REPLACE WITH YOUR IMAGE PATH -->
+                        </div>
+                         <div class="project-card-content">
+                            <h4>Project Beta Name</h4>
+                            <p>Another project description focusing on different aspects or technologies used. Emphasize your role or contribution.</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span> <span>Firebase</span> <span>CSS Grid</span> <span>API Intergration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://example-beta-demo.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Demo"><i class="fas fa-external-link-alt"></i></a> <!-- REPLACE LINK -->
+                                <a href="https://github.com/your-github/project-beta" target="_blank" rel="noopener noreferrer" title="GitHub Repository"><i class="fab fa-github"></i></a> <!-- REPLACE LINK -->
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                     <article class="project-card tour-anim-item">
+                        <div class="project-card-image">
+                            <img src="./images/project-gamma.jpg" alt="Screenshot of Project Gamma"> <!-- REPLACE WITH YOUR IMAGE PATH -->
+                        </div>
+                         <div class="project-card-content">
+                            <h4>Project Gamma Feature</h4>
+                            <p>Describe a third project, maybe a backend-focused one or something using a different framework or database.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span> <span>PostgreSQL</span> <span>Docker</span> <span>REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- <a href="#" target="_blank" rel="noopener noreferrer" title="Live Demo"><i class="fas fa-external-link-alt"></i></a> -->
+                                <a href="https://github.com/your-github/project-gamma" target="_blank" rel="noopener noreferrer" title="GitHub Repository"><i class="fab fa-github"></i></a> <!-- REPLACE LINK -->
+                            </div>
+                        </div>
+                    </article>
+                     <!-- Add more project cards as needed, adding tour-anim-item to each article -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Education & Certifications Section -->
+        <section id="education" class="section-padding">
+            <div class="container">
+                 <!-- Add tour-anim-item to section title -->
+                 <h2 class="tour-anim-item">Education <span class="highlight">&</span> Certifications</h2>
+                 <!-- Add tour-anim-item to each education/certification item -->
+                <div class="education-item tour-anim-item">
+                     <i class="fas fa-university education-icon"></i>
+                    <div class="education-details">
+                        <h3>BRAC University, Dhaka</h3>
+                        <p><strong>Bachelor of Science in Computer Science and Engineering</strong></p>
+                        <p><em>Graduated: May 2023</em></p>
+                        <p>Focus Areas: Software Development, Algorithms, Database Systems, Web Technologies</p>
+                    </div>
+                </div>
+                 <!-- Certification Example -->
+                 <div class="education-item tour-anim-item">
+                     <i class="fas fa-certificate education-icon"></i>
+                    <div class="education-details">
+                        <h3>Advanced Full-Stack Web Development Bootcamp</h3>
+                        <p><strong>Programming Hero</strong></p>
+                        <p><em>Completed: October 2023</em></p>
+                        <p>Comprehensive training covering MERN stack, data structures, algorithms, and job preparation.</p>
+                    </div>
+                </div>
+                 <!-- Add more education/certification items with tour-anim-item as needed -->
+            </div>
+        </section>
+
+         <!-- 7. Experience Section -->
+         <section id="experience" class="section-padding">
+            <div class="container">
+                <h2 class="tour-anim-item">Experience</h2>
+                 <!-- Add tour-anim-item to each experience item -->
+                <div class="experience-item tour-anim-item">
+                    <h3>Software Engineer Intern</h3>
+                    <p><strong>Tiger IT Bangladesh Ltd.</strong> | Dhaka, Bangladesh | Jul 2022 – Sep 2022</p>
+                    <ul>
+                        <li>Assisted in developing features for a national identification system using Java Spring Boot.</li>
+                        <li>Participated in daily stand-ups, code reviews, and collaborated with QA on testing.</li>
+                        <li>Gained experience with microservices architecture and database management (PostgreSQL).</li>
+                    </ul>
+                </div>
+                 <!-- Add more experience-item divs with tour-anim-item as needed -->
+            </div>
+        </section>
+
+        <!-- 8. Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                 <!-- Add tour-anim-item to section title -->
+                <h2 class="tour-anim-item">Let's Connect <span class="highlight">&</span> Build</h2>
+                 <!-- Add tour-anim-item to intro paragraph -->
+                 <p class="text-center tour-anim-item" style="max-width: 600px; margin-left: auto; margin-right:auto;">Interested in collaborating or have a project in mind? Feel free to reach out!</p>
+                 <form id="contact-form" action="https://formspree.io/f/mqkrvgya" method="POST" class="contact-form"> <!-- REPLACE WITH YOUR FORMSPREE ENDPOINT -->
+                     <!-- Add tour-anim-item to each input group and the submit button -->
+                    <div class="input-group tour-anim-item">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder=" " required> <!-- Added placeholder for label effect -->
+                    </div>
+                     <div class="input-group tour-anim-item">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder=" " required> <!-- Added placeholder for label effect -->
+                    </div>
+                     <div class="input-group tour-anim-item">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder=" "> <!-- Added placeholder for label effect -->
+                    </div>
+                     <div class="input-group tour-anim-item">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea> <!-- Added placeholder for label effect -->
+                    </div>
+                    <button type="submit" class="tour-anim-item">Send Message <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+                     <!-- Form Status message area -->
+                    <div id="form-status"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- 9. Resume Download Section -->
+         <section id="resume-download" class="section-padding text-center">
+             <div class="container">
+                  <!-- Add tour-anim-item to the button -->
+                 <a href="./resume/Arup_Bhowmik_Pritom_Resume_FSWD.pdf" download="Arup_Bhowmik_Pritom_Resume_FSWD.pdf" class="cta-button tour-anim-item"> <!-- REPLACE WITH YOUR RESUME PATH -->
+                     <i class="fas fa-download" style="margin-right: 8px;"></i> Download My Resume
+                 </a>
+             </div>
+         </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links" aria-label="Social Media Links">
+                <!-- Replace # with your actual profile links -->
+                <a href="https://github.com/arup-bhowmik" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a> <!-- REPLACE LINK -->
+                <a href="https://www.linkedin.com/in/arupbhowmikpritom/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a> <!-- REPLACE LINK -->
+                 <!-- Add other relevant links here -->
+            </div>
+            <p>© <span id="currentYear"></span> Pritom Bhowmik. Forged with <i class="fas fa-fire" style="color: var(--primary-accent);"></i> and Code.</p>
+             <!-- Add 3D model attribution here if needed -->
+             <p class="attribution">
+                 <!-- Example: 3D Model "Astronaut" by Google licensed under CC BY 4.0 -->
+                 If using Astronaut model: 3D model "Astronaut" by Google licensed under CC BY 4.0 via <a href="https://modelviewer.dev" target="_blank" rel="noopener noreferrer">modelviewer.dev</a>.
+             </p>
+        </div>
+    </footer>
+
+    <!-- Hidden Audio Player for Tour -->
+    <audio id="background-audio" loop preload="metadata">
+        <source src="audio/background-music.mp3" type="audio/mpeg"> <!-- REPLACE WITH YOUR AUDIO PATH -->
+        Your browser doesn't support audio playback.
+    </audio>
+
+    <!-- Narration Box for Interactive Tour -->
+    <div id="narration-box" class="narration-box">
+        <p id="narration-text"></p>
+    </div>
+
+    <!-- Removed Transition Overlay -->
+    <!-- <div id="transition-overlay" class="transition-overlay" style="display: none;"></div> -->
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"> </script>
+
+</body>
+</html>
